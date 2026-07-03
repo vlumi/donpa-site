@@ -104,6 +104,9 @@ body {
 
 .closing { text-align: center; padding: 1rem 0 3rem; font-weight: 700; }
 .closing .fine { font-weight: 400; }
+/* Links in the muted "fine print" still need to read as links → accent, not dim ink. */
+.fine a { color: var(--accent); text-decoration: underline; }
+.fine a:hover { text-decoration: none; }
 
 /* ---- prose (support / privacy) ---- */
 .prose { max-width: 44rem; margin: 2rem auto 3rem; }
