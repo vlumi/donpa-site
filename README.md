@@ -11,19 +11,37 @@ public for transparency, not for reuse.
 
 ## Build
 
-Static site, built with [Hugo](https://gohugo.io/) (extended). No JS, no external
+Static site, built with [Hugo Extended](https://gohugo.io/). No JS, no external
 assets — plain HTML/CSS.
+
+The Hugo version is **pinned** in [`.hugoversion`](.hugoversion). Hugo is a
+build-time tool, not a runtime — there's no security reason to chase updates, and
+a bump is the thing most likely to *break* the build. So pin it and update
+**deliberately**: bump `.hugoversion`, run a local build, and commit only if it's
+clean. (The box's nginx / OS / certbot are what stay current, not Hugo.)
 
 ```sh
 hugo server        # local preview at http://localhost:1313
-hugo               # build into ./public
+hugo               # one-off build into ./public
 ```
 
 ## Deploy
 
 Served by nginx over HTTPS (Let's Encrypt / certbot) on the host for `donpa.app`.
-Build produces `./public`; publish that directory (pull + `hugo`, or rsync the
-built output).
+[`deploy.sh`](deploy.sh) does it in one step: it fetches the **pinned** Hugo
+Extended (cached per-version under `~/.local/share/donpa-hugo`, no root, never the
+system Hugo), pulls, and builds straight into the web root.
+
+```sh
+./deploy.sh                          # pull, build, publish to /var/www/donpa.app
+WEBROOT=/some/other/path ./deploy.sh # override the publish dir
+./deploy.sh --no-pull                # build the working tree as-is
+```
+
+The build writes directly into `WEBROOT` (`--cleanDestinationDir` removes stale
+files), so **nginx `root` points at the web root itself** (e.g.
+`root /var/www/donpa.app;`), not a `public/` subdir — no repo or source files ever
+live under the served path.
 
 ### Universal Links (later — for the v0.5.0 share feature)
 
