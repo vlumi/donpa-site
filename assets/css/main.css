@@ -57,8 +57,15 @@ body {
   padding: 2.5rem 0 3rem;
   border-bottom: 3px solid var(--ink);
 }
-.hero-mark { font-size: 4rem; line-height: 1; }
-.boom { color: var(--accent); filter: drop-shadow(2px 2px 0 var(--ink)); }
+.hero-icon {
+  width: 128px;
+  height: 128px;
+  /* iOS-style rounded corners; a hair of border + drop for depth on the paper. */
+  border-radius: 28px;
+  border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+  margin-bottom: .4rem;
+}
 .hero-title {
   font-size: clamp(2.2rem, 6vw, 3.5rem);
   font-weight: 900;
