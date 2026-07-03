@@ -72,7 +72,14 @@ body {
   letter-spacing: -.02em;
   margin: .5rem 0 .3rem;
 }
-.hero-title .jp { color: var(--accent); font-size: .55em; vertical-align: middle; }
+/* JP name on its own line beneath the EN title, centred — balanced, not trailing. */
+.hero-title .jp {
+  display: block;
+  color: var(--accent);
+  font-size: .45em;
+  letter-spacing: .08em;
+  margin-top: .15em;
+}
 .hero-tagline { font-size: 1.25rem; font-weight: 700; margin: .2rem 0 1rem; }
 .hero-lede { max-width: 40rem; margin: 0 auto 1.5rem; color: var(--ink-soft); }
 .hero-soon { font-weight: 700; color: var(--accent); }
