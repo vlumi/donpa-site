@@ -1,0 +1,25 @@
+baseURL: "https://donpa.app/"
+locale: "en-US"
+title: "Donpa Squad"
+
+# Clean URLs; no taxonomies needed for a small marketing/support site.
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+
+params:
+  tagline: "Manga-styled Minesweeper for iPhone, iPad, and Mac."
+  # Filled in once the App Store listing is public.
+  appStoreURL: ""
+  supportEmail: ""
+  githubURL: "https://github.com/vlumi/donpa"
+
+menu:
+  main:
+    - name: "Support"
+      pageRef: "/support"
+      weight: 10
+    - name: "Privacy"
+      pageRef: "/privacy"
+      weight: 20

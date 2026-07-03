@@ -1,0 +1,133 @@
+/* Donpa Squad — manga-styled marketing site.
+   Ink on screentone paper: warm off-white, heavy black ink, one accent.
+   Self-contained, no external fonts or assets (fast, private, cache-hard). */
+
+:root {
+  --paper: #f5f2ea;        /* warm manga paper */
+  --ink: #1a1a1a;          /* near-black ink */
+  --ink-soft: #4a4744;
+  --accent: #e5342a;       /* comic red (the "donpa" boom) */
+  --line: #d9d2c4;         /* faint rule */
+  --tone: #e9e4d8;         /* screentone panel fill */
+  --max: 60rem;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  /* faint screentone dot grid, drawn in CSS so nothing loads */
+  background-image: radial-gradient(var(--line) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+
+/* ---- header ---- */
+.site-head {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.brand { text-decoration: none; color: var(--ink); display: flex; align-items: baseline; gap: .5rem; }
+.brand-mark { font-weight: 800; color: var(--accent); }
+.brand-name { font-weight: 800; letter-spacing: -.01em; }
+.site-nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-left: 1.1rem;
+  font-weight: 600;
+}
+.site-nav a:hover { color: var(--accent); }
+
+/* ---- hero ---- */
+.hero {
+  text-align: center;
+  padding: 2.5rem 0 3rem;
+  border-bottom: 3px solid var(--ink);
+}
+.hero-mark { font-size: 4rem; line-height: 1; }
+.boom { color: var(--accent); filter: drop-shadow(2px 2px 0 var(--ink)); }
+.hero-title {
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: -.02em;
+  margin: .5rem 0 .3rem;
+}
+.hero-title .jp { color: var(--accent); font-size: .55em; vertical-align: middle; }
+.hero-tagline { font-size: 1.25rem; font-weight: 700; margin: .2rem 0 1rem; }
+.hero-lede { max-width: 40rem; margin: 0 auto 1.5rem; color: var(--ink-soft); }
+.hero-soon { font-weight: 700; color: var(--accent); }
+
+/* comic-panel button */
+.btn {
+  display: inline-block;
+  padding: .8rem 1.6rem;
+  font-weight: 800;
+  text-decoration: none;
+  border: 3px solid var(--ink);
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.btn:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--ink); }
+.btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
+
+/* ---- features ---- */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  padding: 2.5rem 0;
+}
+.feature {
+  background: var(--tone);
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  padding: 1.25rem 1.4rem;
+}
+.feature h2 { font-size: 1.15rem; margin: 0 0 .5rem; }
+.feature p { margin: 0; color: var(--ink-soft); }
+
+.closing { text-align: center; padding: 1rem 0 3rem; font-weight: 700; }
+.closing .fine { font-weight: 400; }
+
+/* ---- prose (support / privacy) ---- */
+.prose { max-width: 44rem; margin: 2rem auto 3rem; }
+.prose h1 { font-size: 2rem; font-weight: 900; border-bottom: 3px solid var(--ink); padding-bottom: .3rem; }
+.prose h2 { font-size: 1.3rem; margin-top: 2rem; }
+.prose a { color: var(--accent); }
+.prose code { background: var(--tone); padding: .1em .35em; border-radius: 3px; }
+
+/* ---- footer ---- */
+.site-foot {
+  border-top: 3px solid var(--ink);
+  padding: 1.5rem 1.25rem 2.5rem;
+  text-align: center;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.site-foot nav a { color: var(--ink-soft); text-decoration: none; margin: 0 .6rem; font-weight: 600; }
+.site-foot nav a:hover { color: var(--accent); }
+.fine { color: var(--ink-soft); font-size: .9rem; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17150f; --ink: #ece7db; --ink-soft: #b3ada0;
+    --line: #2b2820; --tone: #211e17;
+  }
+  .btn { color: #fff; }
+}

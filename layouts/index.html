@@ -1,0 +1,51 @@
+{{ define "main" }}
+  <section class="hero">
+    <div class="hero-mark" aria-hidden="true">
+      <span class="boom">✸</span>
+    </div>
+    <h1 class="hero-title">Donpa Squad <span class="jp">ドンパ隊</span></h1>
+    <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
+    <p class="hero-lede">
+      Classic Minesweeper with a manga face — and boards you won't find
+      elsewhere: square <strong>Grid</strong>, six-sided <strong>Hive</strong>,
+      and <strong>Round</strong> (wrap-around) boards up to a million cells.
+    </p>
+    {{ with .Site.Params.appStoreURL }}
+      <a class="btn btn-appstore" href="{{ . }}">Download on the App Store</a>
+    {{ else }}
+      <p class="hero-soon">Coming to the App Store.</p>
+    {{ end }}
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Three board families</h2>
+      <p><strong>Basic</strong> presets, square <strong>Grid</strong>, and
+      hexagonal <strong>Hive</strong> — each with a <strong>Flat</strong> or
+      <strong>Round</strong> edge. A Round board wraps: pan off one side and it
+      flows in from the other, forever.</p>
+    </div>
+    <div class="feature">
+      <h2>From a tap to a million cells</h2>
+      <p>Sizes run XS to XXXL. The big boards pan and zoom with a corner minimap
+      you can drag to navigate — and stay smooth on a phone.</p>
+    </div>
+    <div class="feature">
+      <h2>Your Service Record</h2>
+      <p>Best times, clears, and career stats per board. Optional iCloud sync
+      keeps them across your devices — off by default, never shared with anyone.</p>
+    </div>
+    <div class="feature">
+      <h2>iPhone, iPad &amp; Mac</h2>
+      <p>A native app on every screen — swipe on iPhone, keyboard-drive on Mac.
+      One purchase covers them all.</p>
+    </div>
+  </section>
+
+  <section class="closing">
+    <p>Free. No ads, no accounts, no tracking. Just mines.</p>
+    {{ with .Site.Params.githubURL }}
+      <p class="fine">Open source — <a href="{{ . }}">code on GitHub</a>.</p>
+    {{ end }}
+  </section>
+{{ end }}
