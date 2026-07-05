@@ -17,6 +17,11 @@ server {
     root /var/www/donpa.app;
     index index.html;
 
+    # Serve Hugo's custom 404 page for any miss — notably /s/<blob> score-share
+    # links opened without the app (they have no file here; the page tells the
+    # visitor to open it in the app). Hugo builds 404.html at the web root.
+    error_page 404 /404.html;
+
     # Apple App Site Association: no extension, served as JSON, NO redirect.
     # Exact-match location so it wins over the dotfile deny and the try_files
     # catch-all below. (Needed for the app's Universal Links; harmless before then.)

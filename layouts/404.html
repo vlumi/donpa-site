@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <section class="hero">
+    <img class="hero-icon" src="/appicon.png" width="128" height="128"
+         alt="Donpa Squad app icon">
+
+    {{/* Two messages: a /s/… path is almost always a score-share link opened
+         without the app (or in a browser, which can't render it); anything else
+         is a plain not-found. JS swaps in the share copy when the path matches;
+         the not-found copy is the no-JS / non-share default. */}}
+    <h1 class="hero-title" id="e-title">Page not found</h1>
+    <p class="hero-lede" id="e-lede">
+      That page isn’t here. It might be a Donpa Squad score share — those open
+      in the app, not the browser.
+    </p>
+
+    {{ with .Site.Params.appStoreURL }}
+      <a class="btn btn-appstore" href="{{ . }}">Download on the App Store</a>
+    {{ else }}
+      <p class="hero-soon">Coming to the App Store.</p>
+    {{ end }}
+
+    <p class="hero-soon"><a href="/">Back to donpa.app</a></p>
+  </section>
+
+  <script>
+    // A /s/<blob> URL is a score share. If we're on one, reassure rather than
+    // "not found" — the link is fine, it just needs the app.
+    if (location.pathname.indexOf("/s/") === 0) {
+      document.getElementById("e-title").textContent = "Open this in Donpa Squad";
+      document.getElementById("e-lede").textContent =
+        "This is a Donpa Squad score share. Open it on a device with the app " +
+        "installed and it’ll add your rival’s scores. Nothing to see in a browser.";
+    }
+  </script>
+{{ end }}
