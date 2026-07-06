@@ -29,6 +29,13 @@ rebalanced for the new board shapes). Scores carry forward normally after that.
 **Can I play on Mac and iPhone with one purchase?**
 Yes — it's a single app across iPhone, iPad, and Mac.
 
+**How does sharing scores with a rival work?**
+From the **Mess hall**, show your QR code (or send your link) — whoever scans or
+opens it gets a snapshot of the scores you chose to share, straight from your
+device to theirs. There's no server and no account: their copy updates only when
+you share again and they scan again. Removing a rival deletes their data from
+your device.
+
 **Is there any tracking or ads?**
 No. No accounts, no analytics, no advertising, no tracking. See the
 [Privacy Policy](/privacy/).
