@@ -36,6 +36,17 @@ device to theirs. There's no server and no account: their copy updates only when
 you share again and they scan again. Removing a rival deletes their data from
 your device.
 
+**What counts as a "forced guess"?**
+A click made when the board gave you no way out: either no safe move existed
+anywhere, or the cells you faced sat in a sealed pocket that no amount of play
+could ever resolve — an eventual coin flip, taken early. The percentage shown
+is the **survival odds your click had at that moment**, computed from exactly
+what the board showed. Chords count too (the gamble is every cell the chord
+opens at once). The bookkeeping is exact but conservative: a recorded guess
+always carries its true odds, but a rare position too tangled to analyze goes
+unrecorded rather than mis-scored. And if you die guessing and the game says
+nothing — a safe move still existed somewhere.
+
 **Is there any tracking or ads?**
 No. No accounts, no analytics, no advertising, no tracking. See the
 [Privacy Policy](/privacy/).
