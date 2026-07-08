@@ -17,6 +17,9 @@ params:
 
 menu:
   main:
+    - name: "How to play"
+      pageRef: "/how-to-play"
+      weight: 5
     - name: "Support"
       pageRef: "/support"
       weight: 10

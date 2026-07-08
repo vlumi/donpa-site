@@ -1,10 +1,6 @@
 ---
 title: "How to play"
 description: "Minesweeper from the first tap to forced guesses — the long version of Donpa Squad's in-app guide."
-menu:
-  main:
-    name: "How to play"
-    weight: 5
 ---
 
 Donpa Squad is Minesweeper: a hidden minefield, numbers that tell the truth,
@@ -49,8 +45,8 @@ flags beside it, tapping the **number itself** opens all of its remaining
 neighbours at once.
 
 ```text
- 🚩 1  ·          🚩 1  ·
- ■  1  ·    →     ·  1  ·
+ ■  1  ·          ·  1  ·
+ 🚩 1  ·    →     🚩 1  ·
  ■  1  ·          ·  1  ·
 ```
 
@@ -79,11 +75,12 @@ three hidden tiles left, you know something about those tiles.
 Sometimes Minesweeper stops being a logic puzzle for exactly one tap:
 
 ```text
- 1  ■  ■  1
+ ·  1  ■
+ ·  1  ■
 ```
 
-One mine, two identical tiles, and no number anywhere that can ever tell them
-apart. That's a **forced guess** — the board made you gamble, and Donpa
+Both 1s touch both hidden tiles: one mine, two identical candidates, and no
+number anywhere that can ever tell them apart. That's a **forced guess** — the board made you gamble, and Donpa
 tracks it honestly:
 
 - When you survive a forced guess, the game stamps the **survival odds your
