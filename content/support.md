@@ -36,6 +36,11 @@ device to theirs. There's no server and no account: their copy updates only when
 you share again and they scan again. Removing a rival deletes their data from
 your device.
 
+**How do I actually play?**
+The in-app guide (the `?` on the home screen) covers the basics; the long
+version — chording, the mine counter, forced guesses, Drills — is at
+[How to play](/how-to-play/).
+
 **What counts as a "forced guess"?**
 A click made when the board gave you no way out: either no safe move existed
 anywhere, or the cells you faced sat in a sealed pocket that no amount of play
