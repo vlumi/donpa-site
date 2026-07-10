@@ -34,9 +34,18 @@ The corner toggle switches what a tap does:
 - **Flag** plants a marker on a suspected mine. Flags are your notes: the
   board never checks them, they can be wrong, and you can clear them freely.
 
+A **long-press** does the other one — flag in Dig mode, dig in Flag mode (on
+a revealed number it chords, like a tap). On a Mac, right-click is the same
+"other action", so the toggle effectively assigns your two mouse buttons: Dig
+mode gives the classic left-to-dig, right-to-flag.
+
 You never *have* to flag. The win condition is opening every safe tile, so a
 flagless game is not just possible but a recognized feat (see **Decorations**
 in the Service Record).
+
+Prefer a maybe-state? An optional **?** mark (Settings → Question marks)
+turns the flag cycle into flag → ? → clear. A ? is only a note: it never
+counts toward the mine counter and never satisfies a number for chording.
 
 ## Chording
 
@@ -104,7 +113,8 @@ Tuesday. The toasts only celebrate coin flips and worse.
 
 ## Drills: practice without the dice
 
-The **Drills** family (leftmost in New game) generates boards that **never
+The **Drills** family (leftmost in New game, and where a fresh install
+starts) generates boards that **never
 force a guess** — every board is verified fully solvable by pure deduction
 before you see it. Fixed 12% mine density, five sizes from XS to XL, with
 their own best times.
@@ -120,7 +130,8 @@ hexagonal Hive, and Round (wrap-around) edges each open on wins, and locked
 options always show what opens them. Wins pin **Decorations** — 22
 achievements from first blood to genuine feats — in your Service Record.
 And when you're ready to compare notes, the **Mess hall** lets you swap
-scores with rivals by QR code or link, no accounts, no servers.
+scores with rivals by QR code or link — or both ways at once with a player
+in the same room (**Nearby**) — no accounts, no servers.
 
 Questions the guide doesn't answer live on the [support page](/support/), and
 bugs go to [GitHub](https://github.com/vlumi/donpa/issues).
