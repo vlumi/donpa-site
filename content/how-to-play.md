@@ -47,6 +47,15 @@ Prefer a maybe-state? An optional **?** mark (Settings → Question marks)
 turns the flag cycle into flag → ? → clear. A ? is only a note: it never
 counts toward the mine counter and never satisfies a number for chording.
 
+## Playing with a keyboard
+
+On a Mac — or an iPad/iPhone with a hardware keyboard — the whole game plays
+without a pointer: the **arrow keys or WASD** move a board cursor, **Return**
+digs (or chords a revealed number), **F** flags, **Space** switches dig/flag,
+and **Esc** pauses. Every menu and screen navigates the same way — **Tab**
+moves between control groups, arrows within one — and **⌘/** opens the full
+shortcut reference in the app.
+
 ## Chording
 
 The speed technique. When a revealed number already has exactly that many
