@@ -120,6 +120,21 @@ it.
 Better than even odds isn't luck, by the way — surviving an 85% tap is
 Tuesday. The toasts only celebrate coin flips and worse.
 
+## Pace: speed the dice can't inflate
+
+A lucky board opens in three taps; a cruel one makes you earn every tile.
+Raw time can't tell those apart — **pace** can. Every board has a minimum
+number of moves a perfect player would need (the classic *3BV* measure), and
+your pace is that minimum divided by your time: **required moves per
+second**. A fast time on a trivial board is a normal pace; a decent time on
+a dense one can be a great pace.
+
+Every win shows its pace on the result panel, and the Service Record keeps
+a **recent pace** (a weighted read over your last ten wins on that board —
+it drifts down with rust and back up with form) and a **best pace** next to
+each best time. Recent is the honest "how good am I *now*"; the scoreboard
+stays the trophy shelf.
+
 ## Drills: practice without the dice
 
 The **Drills** family (leftmost in New game, and where a fresh install
@@ -136,11 +151,14 @@ stopwatch.
 
 The board matrix **unlocks as you play**: bigger sizes, denser ranks, the
 hexagonal Hive, and Round (wrap-around) edges each open on wins, and locked
-options always show what opens them. Wins pin **Decorations** — 22
-achievements from first blood to genuine feats — in your Service Record.
+options always show what opens them. Wins pin **Decorations** — medals
+from first blood to genuine feats — in your Service Record (and, strictly
+opt-in, the app can report them to Game Center).
 And when you're ready to compare notes, the **Mess hall** lets you swap
 scores with rivals by QR code or link — or both ways at once with a player
-in the same room (**Nearby**) — no accounts, no servers.
+in the same room (**Nearby**) — no accounts, no servers. Shared cards carry
+best times and pace, so mixed-skill circles have more to compare than raw
+stopwatch tables.
 
 Questions the guide doesn't answer live on the [support page](/support/), and
 bugs go to [GitHub](https://github.com/vlumi/donpa/issues).
