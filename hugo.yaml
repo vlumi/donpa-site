@@ -20,6 +20,9 @@ menu:
     - name: "How to play"
       pageRef: "/how-to-play"
       weight: 5
+    - name: "Screenshots"
+      pageRef: "/screenshots"
+      weight: 7
     - name: "Support"
       pageRef: "/support"
       weight: 10

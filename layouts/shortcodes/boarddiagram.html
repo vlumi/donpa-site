@@ -1,0 +1,12 @@
+{{- /* A rendered board diagram from the app's real TileDiagram (see the
+       DONPA_GUIDE_DIAGRAMS harness). Light/dark swap via <picture>; the alt
+       text carries the rule for screen readers. Usage:
+       {{< boarddiagram name="goal" alt="..." >}} */ -}}
+{{- $name := .Get "name" -}}
+{{- $alt := .Get "alt" -}}
+<figure class="board-diagram">
+  <picture>
+    <source srcset="/img/howto/howto-{{ $name }}-dark.png" media="(prefers-color-scheme: dark)">
+    <img src="/img/howto/howto-{{ $name }}-light.png" alt="{{ $alt }}" loading="lazy">
+  </picture>
+</figure>
