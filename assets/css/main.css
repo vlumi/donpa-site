@@ -148,3 +148,49 @@ body {
   }
   .btn { color: #fff; }
 }
+
+.board-diagram {
+  margin: 1.4rem 0;
+  text-align: center;
+}
+.board-diagram img {
+  max-width: 100%;
+  height: auto;
+}
+
+.shot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.4rem;
+  margin: 1.8rem 0;
+}
+.shot {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.shot img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: block;
+}
+.shot-placeholder {
+  aspect-ratio: 9 / 16;
+  border: 2px dashed var(--line);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tone);
+  color: var(--ink-soft);
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: .8rem;
+}
+.shot figcaption {
+  font-size: .84rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
