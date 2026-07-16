@@ -13,11 +13,7 @@ Open every tile that isn't a mine. Each revealed number counts the mines
 touching that tile — including diagonals on square boards, or the six
 neighbours on a Hive board.
 
-```text
- ·  1  ■
- ·  2  ■
- ·  1  ■
-```
+{{< boarddiagram name="goal" alt="A cleared column of numbers — 1, 2, 1 — beside a hidden column. The 2 touches more mines than the 1s." >}}
 
 Here the open tiles say everything: the `2` touches more mines than the `1`s,
 and all of them can only be talking about the hidden column. Every deduction
@@ -62,11 +58,7 @@ The speed technique. When a revealed number already has exactly that many
 flags beside it, tapping the **number itself** opens all of its remaining
 neighbours at once.
 
-```text
- ■  1  ·          ·  1  ·
- 🚩 1  ·    →     🚩 1  ·
- ■  1  ·          ·  1  ·
-```
+{{< boarddiagram name="chord" alt="Before and after chording: a column of 1s with one flag, then the whole column swept open in one tap." >}}
 
 The `1`s are satisfied by the flag, so chording them sweeps the rest of the
 column in one tap. The bargain: a chord *trusts your flags*. If the flag was
@@ -92,10 +84,7 @@ three hidden tiles left, you know something about those tiles.
 
 Sometimes Minesweeper stops being a logic puzzle for exactly one tap:
 
-```text
- ·  1  ■
- ·  1  ■
-```
+{{< boarddiagram name="guess" alt="Two 1s each touching the same two hidden tiles — one mine, two identical candidates, no way to tell them apart." >}}
 
 Both 1s touch both hidden tiles: one mine, two identical candidates, and no
 number anywhere that can ever tell them apart. That's a **forced guess** — the board made you gamble, and Donpa

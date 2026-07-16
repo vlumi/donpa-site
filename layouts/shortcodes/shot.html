@@ -1,0 +1,17 @@
+{{- /* One app screenshot in the gallery. Falls back to a labelled placeholder
+       until the PNG is dropped into /static/img/shots/. Usage:
+       {{< shot name="home" caption="The barracks — your home base" >}} */ -}}
+{{- $name := .Get "name" -}}
+{{- $caption := .Get "caption" -}}
+{{- $light := printf "/img/shots/%s.png" $name -}}
+{{- $exists := fileExists (printf "static/img/shots/%s.png" $name) -}}
+<figure class="shot">
+  {{- if $exists }}
+  <img src="{{ $light }}" alt="{{ $caption }}" loading="lazy">
+  {{- else }}
+  <div class="shot-placeholder" role="img" aria-label="{{ $caption }} (screenshot pending)">
+    <span>{{ $name }}.png</span>
+  </div>
+  {{- end }}
+  <figcaption>{{ $caption }}</figcaption>
+</figure>
