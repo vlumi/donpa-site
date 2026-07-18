@@ -144,8 +144,8 @@ options always show what opens them. Wins pin **Decorations** — medals
 from first blood to genuine feats — in your Service Record (and, strictly
 opt-in, the app can report them to Game Center).
 And when you're ready to compare notes, the **Mess hall** lets you swap
-scores with rivals by QR code or link — or both ways at once with a player
-in the same room (**Nearby**) — no accounts, no servers. Shared cards carry
+score cards both ways with a player in the same room (**Nearby**) — no
+accounts, no servers. Shared cards carry
 best times and pace, so mixed-skill circles have more to compare than raw
 stopwatch tables.
 
