@@ -30,11 +30,11 @@ rebalanced for the new board shapes). Scores carry forward normally after that.
 Yes — it's a single app across iPhone, iPad, and Mac.
 
 **How does sharing scores with a rival work?**
-From the **Mess hall**, show your QR code (or send your link) — whoever scans or
-opens it gets a snapshot of the scores you chose to share, straight from your
-device to theirs. There's no server and no account: their copy updates only when
-you share again and they scan again. Removing a rival deletes their data from
-your device.
+From the **Mess hall**, tap **Nearby** with another player in the same room —
+your score cards swap both ways in one handshake, straight from your device to
+theirs. Each of you gets a snapshot of the scores the other chose to share;
+there's no server and no account, and a copy updates only when you swap again.
+Removing a rival deletes their data from your device.
 
 **How do I actually play?**
 The in-app guide (the `?` on the home screen) covers the basics; the long
