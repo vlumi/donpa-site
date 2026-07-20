@@ -52,6 +52,39 @@ always carries its true odds, but a rare position too tangled to analyze goes
 unrecorded rather than mis-scored. And if you die guessing and the game says
 nothing — a safe move still existed somewhere.
 
+**I got a new device — what happens to my scores?**
+If you set up the new device from the old one (or a backup), Donpa just carries
+on: your scores and career move with it and keep counting as the same device.
+If you keep **both** devices in use, open the Service Record → **Scores by
+device** on the new one and choose **Start as a new device** — each device then
+keeps its own tally, and nothing you've already earned is lost. If you skip that
+and play on both, the app notices and points you to the same option.
+
+**I changed the language and nothing happened.**
+The language setting takes effect the next time you open the app — the system
+loads it at launch. Quit and reopen Donpa and it'll be in the new language.
+
+**My daily-challenge streak didn't go up, or a daily time isn't in my best times.**
+Both are on purpose. A streak counts days you actually showed up: playing a
+missed day later from the calendar records your result, but doesn't repair the
+streak. And daily times are the day's own competition — kept separate from a
+board's regular best times, so a board you've memorized from a past daily never
+turns into a personal record.
+
+**When does the daily challenge change?**
+At your own local midnight. It's the same board worldwide for a given day — the
+puzzle doesn't differ by place — but the day rolls over on your device's clock,
+so a friend in another time zone may be on "today's" board a few hours before or
+after you.
+
+**What stops someone cheating their scores?**
+Nothing does, and that's deliberate. Your scores live on your device and are
+yours to keep; there's no server checking them and no global leaderboard to
+game (a leaderboard with no way to validate scores would just fill with
+impossible ones). Sharing works on **mutual trust between people who know each
+other**, not bullet-proof anti-cheat — you swap cards in person with rivals you
+choose. Anyone editing their own numbers is only fooling themselves.
+
 **Is there any tracking or ads?**
 No. No accounts, no analytics, no advertising, no tracking. See the
 [Privacy Policy](/privacy/).
