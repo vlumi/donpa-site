@@ -15,6 +15,10 @@ issue tracker:
 Please include your device and OS version, and the steps to reproduce — it makes
 fixes much faster.
 
+Donpa Squad is free with no ads or in-app purchases. If you'd like to support
+the work, you can [sponsor the developer on GitHub](https://github.com/sponsors/vlumi)
+— entirely optional.
+
 ## Common questions
 
 **Where are my scores?**

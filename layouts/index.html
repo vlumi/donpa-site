@@ -79,5 +79,8 @@
     {{ with .Site.Params.githubURL }}
       <p class="fine">Open source — <a href="{{ . }}">code on GitHub</a>.</p>
     {{ end }}
+    {{ with .Site.Params.sponsorURL }}
+      <p class="fine">Free, no ads — <a href="{{ . }}">sponsor the developer</a> if you like it.</p>
+    {{ end }}
   </section>
 {{ end }}
