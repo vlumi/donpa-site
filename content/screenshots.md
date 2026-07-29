@@ -8,14 +8,13 @@ play — from the first tap to a thousand-cell board, your Service Record, the
 daily challenge, and comparing times with friends.
 
 {{< shotgrid >}}
-{{< shot name="home" caption="The barracks — your home base, with today's daily orders and anything you've got in progress." >}}
+{{< shot name="game-big" caption="From a tap to a million cells — big boards pan and zoom with a corner minimap (Mac)." >}}
 {{< shot name="game" caption="A game in progress: numbers, flags, and the mine counter up top." >}}
-{{< shot name="game-big" caption="From a tap to a million cells — big boards pan and zoom with a corner minimap." >}}
-{{< shot name="newgame" caption="New Game: three board families, six difficulties, Flat or Round edges, XS to XXXL." >}}
-{{< shot name="scoreboard" caption="Your Service Record — best times, pace, full career stats, per board." >}}
+{{< shot name="newgame" caption="New Game: three board families, six difficulties, Flat or Round edges, XS to XXXL (Mac)." >}}
 {{< shot name="daily" caption="The daily challenge: one shared board a day, with a calendar reaching back to day one." >}}
 {{< shot name="messhall" caption="The Mess hall — swap score cards with Nearby, and compare head-to-head with rivals." >}}
-{{< shot name="decorations" caption="Decorations: hand-drawn medals for skill, luck, and the long grind." >}}
+{{< shot name="scoreboard" caption="Your Service Record — best times, pace, full career stats, per board (Mac)." >}}
+{{< shot name="game-dark" caption="Dark mode throughout — the same board, after dark (Mac)." >}}
 {{< /shotgrid >}}
 
 Free on iPhone, iPad, and Mac — no ads, no accounts, no tracking.
