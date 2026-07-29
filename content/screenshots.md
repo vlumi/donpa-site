@@ -11,6 +11,7 @@ daily challenge, and comparing times with friends.
 
 {{< shotgrid >}}
 {{< shot name="ip-game" caption="A game in progress: numbers, flags, and the mine counter up top." >}}
+{{< shot name="ip-dark" caption="Dark mode throughout — a thousand-cell board, after dark." >}}
 {{< shot name="ip-daily" caption="The daily challenge: one shared board a day, with a calendar reaching back to day one." >}}
 {{< shot name="ip-messhall" caption="The Mess hall — swap score cards with Nearby, and compare head-to-head with rivals." >}}
 {{< /shotgrid >}}
@@ -27,7 +28,6 @@ daily challenge, and comparing times with friends.
 {{< shotgrid "wide" >}}
 {{< shot name="mac-bigmap" caption="From a tap to a million cells — big boards pan and zoom with a corner minimap." >}}
 {{< shot name="mac-newgame" caption="New Game: three board families, six difficulties, Flat or Round edges, XS to XXXL." >}}
-{{< shot name="mac-dark" caption="Dark mode throughout — the same board, after dark." >}}
 {{< /shotgrid >}}
 
 Free on iPhone, iPad, and Mac — no ads, no accounts, no tracking.
