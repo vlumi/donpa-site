@@ -10,18 +10,24 @@ daily challenge, and comparing times with friends.
 ### On iPhone
 
 {{< shotgrid >}}
-{{< shot name="game" caption="A game in progress: numbers, flags, and the mine counter up top." >}}
-{{< shot name="daily" caption="The daily challenge: one shared board a day, with a calendar reaching back to day one." >}}
-{{< shot name="messhall" caption="The Mess hall — swap score cards with Nearby, and compare head-to-head with rivals." >}}
+{{< shot name="ip-game" caption="A game in progress: numbers, flags, and the mine counter up top." >}}
+{{< shot name="ip-daily" caption="The daily challenge: one shared board a day, with a calendar reaching back to day one." >}}
+{{< shot name="ip-messhall" caption="The Mess hall — swap score cards with Nearby, and compare head-to-head with rivals." >}}
+{{< /shotgrid >}}
+
+### On iPad
+
+{{< shotgrid >}}
+{{< shot name="ipad-variant" caption="A hex board mid-solve — the Hive family, six neighbours instead of eight." >}}
+{{< shot name="ipad-record" caption="Your Service Record — best times, pace, and full career stats, per board." >}}
 {{< /shotgrid >}}
 
 ### On Mac
 
 {{< shotgrid "wide" >}}
-{{< shot name="game-big" caption="From a tap to a million cells — big boards pan and zoom with a corner minimap." >}}
-{{< shot name="newgame" caption="New Game: three board families, six difficulties, Flat or Round edges, XS to XXXL." >}}
-{{< shot name="scoreboard" caption="Your Service Record — best times, pace, full career stats, per board." >}}
-{{< shot name="game-dark" caption="Dark mode throughout — the same board, after dark." >}}
+{{< shot name="mac-bigmap" caption="From a tap to a million cells — big boards pan and zoom with a corner minimap." >}}
+{{< shot name="mac-newgame" caption="New Game: three board families, six difficulties, Flat or Round edges, XS to XXXL." >}}
+{{< shot name="mac-dark" caption="Dark mode throughout — the same board, after dark." >}}
 {{< /shotgrid >}}
 
 Free on iPhone, iPad, and Mac — no ads, no accounts, no tracking.
