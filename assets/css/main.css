@@ -164,6 +164,10 @@ body {
   gap: 1.4rem;
   margin: 1.8rem 0;
 }
+/* Landscape (Mac) shots: wider columns so they don't shrink to phone width. */
+.shot-grid--wide {
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
 .shot {
   margin: 0;
   display: flex;
