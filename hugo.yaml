@@ -10,8 +10,8 @@ disableKinds:
 
 params:
   tagline: "Manga-styled Minesweeper for iPhone, iPad, and Mac."
-  # Filled in once the App Store listing is public.
-  appStoreURL: ""
+  # Region-agnostic Universal Purchase link (one link serves iPhone/iPad/Mac).
+  appStoreURL: "https://apps.apple.com/app/id6783582663"
   supportEmail: ""
   githubURL: "https://github.com/vlumi/donpa"
   sponsorURL: "https://github.com/sponsors/vlumi"
