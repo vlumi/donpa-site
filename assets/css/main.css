@@ -100,6 +100,16 @@ body {
 .btn:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 var(--ink); }
 .btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
 
+/* Official App Store badge (Apple marketing asset — do not alter the artwork).
+   Sized ~150px wide with clear space around it per Apple's guidelines. */
+.appstore-badge {
+  display: inline-block;
+  margin: .4rem 0;
+  transition: transform .08s ease;
+}
+.appstore-badge img { display: block; height: auto; }
+.appstore-badge:hover { transform: translateY(-1px); }
+
 /* ---- features ---- */
 .features {
   display: grid;

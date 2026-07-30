@@ -14,7 +14,7 @@
     </p>
 
     {{ with .Site.Params.appStoreURL }}
-      <a class="btn btn-appstore" href="{{ . }}">Download on the App Store</a>
+      <a class="appstore-badge" href="{{ . }}"><img src="/img/app-store-badge.svg" alt="Download on the App Store" width="150" height="50"></a>
     {{ else }}
       <p class="hero-soon">Coming to the App Store.</p>
     {{ end }}
