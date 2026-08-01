@@ -83,6 +83,8 @@ body {
 .hero-tagline { font-size: 1.25rem; font-weight: 700; margin: .2rem 0 1rem; }
 .hero-lede { max-width: 40rem; margin: 0 auto 1.5rem; color: var(--ink-soft); }
 .hero-soon { font-weight: 700; color: var(--accent); }
+.hero-soon a { color: var(--accent); text-decoration: underline; }
+.hero-soon a:hover { text-decoration: none; }
 
 /* comic-panel button */
 .btn {
