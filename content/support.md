@@ -37,6 +37,21 @@ theirs. Each of you gets a snapshot of the scores the other chose to share;
 there's no server and no account, and a copy updates only when you swap again.
 Removing a rival deletes their data from your device.
 
+**Nearby won't connect, or the swap keeps failing — what can I do?**
+Nearby uses the same short-range Wi-Fi that AirDrop does, so if AirDrop is also
+flaky on a device, that's the thing to fix. On the device that's struggling:
+
+- **Turn on Local Network access.** Settings → Privacy & Security → Local
+  Network → switch on Donpa Squad. If this is off, the two devices can find each
+  other but the swap can't complete — every time.
+- **Reset the radios.** Turn Wi-Fi and Bluetooth off and back on (or flip
+  Airplane mode on, then off). Keep both switched on for the swap.
+- **Make sure both players are on the latest version.** An older app can't read
+  a newer score card.
+- **Still stuck?** Settings → General → Transfer or Reset iPhone → Reset → Reset
+  Location & Privacy clears a wedged Local Network permission. It also fixes
+  AirDrop when that's misbehaving for the same reason.
+
 **What stops someone cheating their scores?**
 Nothing does, and that's deliberate. Your scores live on your device and are
 yours to keep; there's no server checking them and no global leaderboard to
