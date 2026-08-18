@@ -1,13 +1,18 @@
-{{- /* One app screenshot in the gallery. Falls back to a labelled placeholder
-       until the PNG is dropped into /static/img/shots/. Usage:
+{{- /* One app screenshot in the gallery. Sources live in assets/img/shots/ so
+       Hugo resizes them at build time — the store PNGs are up to 2064×2752, far
+       larger than the grid ever shows. Emits 480/960-wide WebP with an srcset;
+       falls back to a labelled placeholder until the PNG is dropped in. Usage:
        {{< shot name="home" caption="The barracks — your home base" >}} */ -}}
 {{- $name := .Get "name" -}}
 {{- $caption := .Get "caption" -}}
-{{- $light := printf "/img/shots/%s.png" $name -}}
-{{- $exists := fileExists (printf "static/img/shots/%s.png" $name) -}}
+{{- $src := resources.Get (printf "img/shots/%s.png" $name) -}}
 <figure class="shot">
-  {{- if $exists }}
-  <img src="{{ $light }}" alt="{{ $caption }}" loading="lazy">
+  {{- with $src }}
+  {{- $small := (.Resize "480x webp q80").RelPermalink -}}
+  {{- $large := (.Resize "960x webp q80").RelPermalink -}}
+  <img src="{{ $small }}" srcset="{{ $small }} 480w, {{ $large }} 960w"
+       sizes="(max-width: 640px) 90vw, 360px"
+       alt="{{ $caption }}" loading="lazy">
   {{- else }}
   <div class="shot-placeholder" role="img" aria-label="{{ $caption }} (screenshot pending)">
     <span>{{ $name }}.png</span>
